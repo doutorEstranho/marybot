@@ -161,4 +161,4 @@ client.on('ready', () => {
 
 
 
-client.login(``);
+client.login(`token do discord developers`);
