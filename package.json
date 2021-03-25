@@ -10,8 +10,30 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@top-gg/sdk": "^3.0.9",
+    "animequote": "^1.1.1",
+    "cheerio": "^1.0.0-rc.5",
+    "common-tags": "^1.8.0",
+    "dblapi.js": "^2.4.1",
+    "dblcore.js": "0.0.6",
+    "discord-slash-commands-client": "^1.1.1",
+    "discord-webhook-node": "^1.1.8",
     "discord.js": "^12.5.1",
+    "discordjs-logger": "^2.0.0",
+    "enmap": "^5.8.4",
     "express": "^4.17.1",
-    "megadb": "^3.4.0"
+    "i18n": "^0.13.2",
+    "kitsu.js": "^2.0.0",
+    "megadb": "^3.4.0",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.5",
+    "node-fetch": "^2.6.1",
+    "popyt": "^4.2.0",
+    "simple-youtube-api": "^5.2.1",
+    "slash-create": "^2.1.2",
+    "snekfetch": "^4.0.4",
+    "soundcloud-downloader": "^0.2.4",
+    "top.gg.js": "^1.0.2",
+    "ytdl-core": "^4.4.5"
   }
 }

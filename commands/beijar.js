@@ -5,7 +5,8 @@ exports.run = async (client, message, args) => {
 var list = [
   'https://imgur.com/iclUiUN.gif',
   'https://imgur.com/lYQt9rx.gif',
-  'https://imgur.com/w1TU5mR.gif'
+  'https://imgur.com/w1TU5mR.gif',
+  'https://media.discordapp.net/attachments/737304721504731146/810189253110661150/tavazapi.gif?width=300&height=300'
 ];
 
 var rand = list[Math.floor(Math.random() * list.length)];
@@ -20,7 +21,7 @@ let avatar = message.author.displayAvatarURL({format: 'png'});
   const embed = new Discord.MessageEmbed()
         .setTitle('Kiss')
         .setColor('#000000')
-        .setDescription(`${message.author} acaba de beijar ${user}`)
+        .setDescription(`${message.author} acaba de beijar ${user}  `)
         .setImage(rand)
         .setTimestamp()
         .setThumbnail(avatar)

@@ -9,10 +9,10 @@ exports.run = async (client, message, args) => {
     message.reply("insira **cara** ou **coroa** na frente do comando.");
   } 
 else if (args[0].toLowerCase() == array1[rand]) {
-    message.channel.send("Deu **" + array1[rand] + "**, você ganhou dessa vez!");
+    message.channel.send("Deu **" + array1[rand] + "**, você ganhou dessa vez! ");
   } 
 else if (args[0].toLowerCase() != array1[rand]) {
-    message.channel.send("Deu **" + array1[rand] + "**, você perdeu dessa vez!"
+    message.channel.send("Deu **" + array1[rand] + "**, você perdeu dessa vez! "
     );
   }
 };

@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
     .setTitle(`Tempo de atividade 🕰️`)
     .setThumbnail("https://imgur.com/WZMylbw.gif")
     .setColor("#FF0000")
-    .setDescription(`**Estou online há:**\n${uptime}`)
+    .setDescription(`**Estou online há:**\n${uptime} `)
 
   message.channel.send(embed);
 };

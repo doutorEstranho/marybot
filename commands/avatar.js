@@ -1,16 +1,36 @@
-const Discord = require("discord.js"); 
+/**
+ * O Comando "avatar" mostrará a imagem de perfil do usuário ou do bot
+ */
 
-exports.run = async (client, message, args) => {
+module.exports = {
 
-  let user = message.mentions.users.first() || client.users.cache.get(args[0]) || message.author;
-  
-  let avatar = user.avatarURL({ dynamic: true, format: "png", size: 1024 });
+  /** Primeiro o metodo run(client, message, args) será executado pelo nosso arquivo message.js
+   * Que passará os argumentos atraves do middleware que programamos.
+  */
+  run: function (client, message, args) {
+    if (!message.mentions.users.size) {
+      return message.channel.send(
+        `> **Seu** avatar 🖼 ${message.author.displayAvatarURL}`
+      )
+    }
+    const avatarList = message.mentions.users.map(
+      user => `> **${user.username}'s** avatar 🖼 ${user.displayAvatarURL}`
+    )
 
-  let embed = new Discord.MessageEmbed() 
-    .setColor(`#4cd8b2`) 
-    .setTitle(`Avatar de ${user.username}`) 
-    .setImage(avatar) 
-    .setFooter(`• Autor: ${message.author.tag}`, message.author.displayAvatarURL({format: "png"}));
- await message.channel.send(embed); 
+    return message.channel.send(avatarList)
+  },
 
-};
+  conf: {},
+
+  /**
+   * Aqui exportamos ajuda do comando como o seu nome categoria, descrição, etc...
+   */
+  get help () {
+    return {
+      name: 'avatar',
+      category: 'Info',
+      description: 'Mostra o avatar do usuário ou de um bot.',
+      usage: 'avatar'
+    }
+  }
+}

@@ -27,7 +27,7 @@ exports.run = async (client, message, args) => {
 			return message.channel.send({
   content: "",
   embed: {
-    title: "hmm",
+    title: "Morse",
     description: "```"+text+"```",
     color: 8384739
   }

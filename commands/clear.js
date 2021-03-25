@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
   });
   message.channel.bulkDelete(fetched);
   message.channel
-    .send(`**${args[0]} mensagens limpas nesse chat!**`).then(msg => msg.delete({timeout: 5000}))
+    .send(`**${args[0]} mensagens limpas nesse chat!  **`).then(msg => msg.delete({timeout: 5000}))
     .catch(error =>
       console.log(`Não foi possível deletar mensagens devido a: ${error}`)
     );
