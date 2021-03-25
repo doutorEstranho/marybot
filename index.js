@@ -54,7 +54,7 @@ console.log('log', `Carregando o total de ${cmdFiles.length} comandos.`)
 
 const Topgg = require('@top-gg/sdk')
 
-const api = new Topgg.Api('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc2Nzg2ODUzNDY0NTcxOTA1MCIsImJvdCI6dHJ1ZSwiaWF0IjoxNjE1NzM3Nzc3fQ.u0C7gUxThbTTXBsCsF2IXyqD68AYWvqt_f4YEZvs56Q')
+const api = new Topgg.Api('')
 
 setInterval(() => {
   api.postStats({
@@ -66,29 +66,8 @@ setInterval(() => {
 
 
 
-const { SlashCommand } = require('slash-create');
-
-module.exports = class HelloCommand extends SlashCommand {
-  constructor(creator) {
-    super(creator, {
-      name: 'hello',
-      description: 'Says hello to you.'
-    });
-    this.filePath = ping.js;
-  }
-
-  async run(ctx) {
-    return `Hello, ${ctx.user.username}!`;
-  }
-}
 
 
-const webhook = new Topgg.Webhook('C0de') // add your top.gg webhook authorization (not bot token)
-
-app.post('/dblwebhook', webhook.middleware(), (req, res) => {
-  // req.vote is your vote object e.g
-  console.log(req.vote.user) // 221221226561929217
-}) // attach the middleware
 
 
 
@@ -161,4 +140,4 @@ client.on('ready', () => {
 
 
 
-client.login(`token do discord developers`);
+client.login(``);
