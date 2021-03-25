@@ -2,7 +2,7 @@ Quer criar um bot para você?
 
 use no visual studio code (ou na sua host)
 
-git clone github.com/C0dezin/discordbot/edit/master.git
+git clone github.com/C0dezin/discordbot.git
 
 coloque o token do seu bot 
 
