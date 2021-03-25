@@ -52,16 +52,7 @@ console.log('log', `Carregando o total de ${cmdFiles.length} comandos.`)
 
 
 
-const Topgg = require('@top-gg/sdk')
 
-const api = new Topgg.Api('')
-
-setInterval(() => {
-  api.postStats({
-    serverCount: client.guilds.cache.size,
-    
-  })
-}, 1800000) // post every 30 minutes
 
 
 
