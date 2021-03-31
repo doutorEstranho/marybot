@@ -130,3 +130,9 @@ client.on('ready', () => {
 
 
 client.login(``);
+
+
+
+
+
+oi
