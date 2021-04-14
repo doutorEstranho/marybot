@@ -1,4 +1,4 @@
-console.log('teste do github aa')
+console.log('teste do github ')
 //✅》Host do Bot
 const express = require('express');
 const app = express();
